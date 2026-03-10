@@ -10,7 +10,7 @@ app = Flask(__name__)
 # ── CORS ──────────────────────────────────────────────────────────────────────
 ALLOWED_ORIGINS = os.environ.get(
     "ALLOWED_ORIGINS",
-    "http://localhost:5173,http://localhost:3000"
+    "http://localhost:5173,http://localhost:3000,https://maxburgerandmore.com,https://www.maxburgerandmore.com"
 ).split(",")
 
 CORS(app, origins=ALLOWED_ORIGINS, supports_credentials=True)
