@@ -16,7 +16,7 @@ ALLOWED_ORIGINS = os.environ.get(
 CORS(app, origins=ALLOWED_ORIGINS, supports_credentials=True)
 
 # ── Gemini setup ──────────────────────────────────────────────────────────────
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyDMRh9-gijPIfXxSuwlYehWAreCabROApA")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel("gemini-2.0-flash")
 
